@@ -1,0 +1,58 @@
+#mainframe
+{
+	background: url(images/beach1024x640.jpg);
+	width: 1024px;
+	height: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 50px;
+	border: 1px solid gray;
+}
+
+#cardzone
+{
+	position:  relative;
+	height: 300px;
+	width:  624px;
+	left: 200px;
+	top: 70px;
+	border: 1px solid gray;
+}
+
+#card1
+{
+	position: absolute;
+	left: 82px;
+	top: 50px;
+}
+
+#card2
+{
+	position: absolute;
+	left: 202px;
+	top: 50px;
+}
+
+#card3
+{
+	position: absolute;
+	left: 322px;
+	top: 50px;
+}
+
+#card4
+{
+	position: absolute;
+	left: 442px;
+	top: 50px;
+}
+
+#random
+{
+	position: absolute;
+	left: 550px;
+	top: 250px;
+	weight: 75px;
+	height: 35px;
+}
+
