@@ -1,0 +1,16 @@
+[Log] "Start log Port25002_Room2_7-20-11_39_47.txt <0.1322303>" 
+<<
+>>
+
+[Log] "[Info ]Dedicated Host Create Room OK <0.2232561>" 
+<<
+>>
+
+[Log] "[Info ]LimitedNATPunchthroughPortRestricted <5.463034>" 
+<<
+>>
+
+[Log] "[Info ]PortRestricted <5.463034>" 
+<<
+>>
+

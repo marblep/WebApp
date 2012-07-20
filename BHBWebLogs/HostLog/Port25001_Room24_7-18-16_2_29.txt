@@ -1,0 +1,464 @@
+[Log] "Start log Port25001_Room24_7-18-16_2_29.txt <0.02>" 
+<<
+>>
+
+[Log] "[Info ]Dedicated Host Create Room OK <0.1527871>" 
+<<
+>>
+
+[Log] "LOAD _Capture_Jungle <0.1527871>" 
+<<
+>>
+
+[Log] "[Info ]-------- Capture Mode ---------- <0.5621277>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: InActiveState_CP  Power: 0 <0.5621277>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: InActiveState_CP  Power: 0 <0.5621277>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: InActiveState_CP  Power: 0 <0.5621277>" 
+<<
+>>
+
+[Warning] "[Warn ]MatchTimeManager.Reset() <0.5621277>" 
+<<
+>>
+
+[Log] "[Info ]On_P2P_NewPlayerRequestLogin, ID: 196, Model ID: 4001, Durability: 100, Level: 38 <4.824112>" 
+<<
+>>
+
+[Log] "SyncAccountInfoToOthers joule 800000 level 38 collectorValue 40 collectorLevel 1 rewardflag 0 abtestflag 0 <6.618649>" 
+<<
+>>
+
+[Log] "[Info ]OnClientLevelLoaded_CSMain -- server <6.806745>" 
+<<
+>>
+
+[Log] "[Info ]--- Waiting, Join, Red: 1, Blue: 0 <6.806745>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <6.806745>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <6.806745>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <6.806745>" 
+<<
+>>
+
+[Log] "[Info ][GameState]  WaitingState --> PlayingState <6.806745>" 
+<<
+>>
+
+[Log] "[Info ][On_SelectWeaponOK] accountID: 196, 0, 1, 5001, 5004 <8.41017>" 
+<<
+>>
+
+[Log] "[Info ]LimitedNATPunchthroughPortRestricted <11.04736>" 
+<<
+>>
+
+[Log] "[Info ]PortRestricted <11.04736>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <12.52>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <22.1451>" 
+<<
+>>
+
+[Log] "[Info ]On_P2P_NewPlayerRequestLogin, ID: 118, Model ID: 118, Durability: 0, Level: 38 <27.20648>" 
+<<
+>>
+
+[Log] "SyncAccountInfoToOthers joule 800000 level 38 collectorValue 40 collectorLevel 1 rewardflag 0 abtestflag 0 <30.1213>" 
+<<
+>>
+
+[Log] "[Info ]OnClientLevelLoaded_CSMain -- server <30.25884>" 
+<<
+>>
+
+[Log] "[Info ]--- Playing, Join, Red: 1, Blue: 1 <30.25884>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <31.32>" 
+<<
+>>
+
+[Log] "[Info ][On_SelectWeaponOK] accountID: 118, 0, 1, 5001, 5004 <35.56694>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <37.26>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <39.25071>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <44.62>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <49.14577>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: -0.2 <50.26467>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <50.30626>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: BlueState_CP  Power: -0.2 <55.31272>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: 0.2 <63.08>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0.2 <68.05746>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <68.09171>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: RedState_CP  Power: 0.2 <73.10952>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: -0.2 <121.64>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: -0.2 <126.6215>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <126.6483>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <138.1339>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <195.12>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: RedState_CP  Power: 0.2 <200.1296>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: -0.2 <202.48>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: -0.2 <209.6984>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <209.7212>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: BlueState_CP  Power: -0.2 <218.3511>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: 0.2 <221.18>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0.2 <226.1585>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <228.04>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: RedState_CP  Power: 0.2 <233.0572>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: -0.2 <235.9>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: RedState_CP  Power: 0 <235.977>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: -0.2 <236.3>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: -0.2 <241.3107>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <241.3226>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <241.9153>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <242.96>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: BlueState_CP  Power: -0.2 <250.1984>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: 0.2 <252.92>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0.2 <257.9174>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <257.9539>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: RedState_CP  Power: 0.2 <262.9628>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: -0.2 <266.52>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: RedState_CP  Power: 0 <273.9969>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: -0.2 <275.12>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: -0.2 <286.1676>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <286.1955>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <290.008>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <292.34>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <305.2308>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <308.98>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <313.963>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <320.2>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: BlueState_CP  Power: -0.2 <327.9452>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: 0.2 <330.88>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0.2 <335.8929>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <335.928>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <338.7131>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <340.58>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <340.7737>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <341>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: BlueState_CP  Power: -0.2 <345.9961>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: 0.2 <348.84>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0.2 <353.8605>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <353.8951>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: RedState_CP  Power: 0.2 <358.9063>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: -0.2 <364.22>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: -0.2 <369.2257>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: -0.2 <369.2555>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: BlueState_CP  Power: -0.2 <374.2747>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToBlueState_CP  Power: 0.2 <376.96>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0.2 <381.9427>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <381.9825>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: RedState_CP  Power: 0.2 <386.9889>" 
+<<
+>>
+
+[Log] "[Info ]=============OnPlayerDisconnected(NetworkPlayer player)============= <389.0811>" 
+<<
+>>
+
+[Log] "[Info ]All Blue Players Escape, 1 red players <389.0811>" 
+<<
+>>
+
+[Log] "[Info ][MatchBonus]realname295 --> Win : 10 <389.0811>" 
+<<
+>>
+
+[Log] "[Movement] realname295: 283.5581 <389.0811>" 
+<<
+>>
+
+[Log] "[Info ][Time Bonus]  realname295  63 <389.0811>" 
+<<
+>>
+
+[Log] "[Info ][X = (P+B)*M + T] P = 0, B = 10, M = 1, T = 63, X = 73 <389.0811>" 
+<<
+>>
+
+[Log] "[Movement] realname217: 656.5579 <389.0811>" 
+<<
+>>
+
+[Log] "[Info ][Time Bonus]  realname217  59 <389.0811>" 
+<<
+>>
+
+[Log] "[Info ][X = (P+B)*M + T] P = 0, B = 0, M = 1, T = 59, X = 59 <389.0811>" 
+<<
+>>
+
+[Log] "[Info ]===[WeaponStaticstic]=== 4 <389.0811>" 
+<<
+>>
+
+[Log] "[Info ]--- Playing, Match End, Red: 1, Blue: 0 <389.0811>" 
+<<
+>>
+
+[Log] "[Info ][GameState]  PlayingState --> MatchEndState <389.0811>" 
+<<
+>>
+
+[Log] "No objects for the given player ID were deleted 2 <389.0811>" 
+<<
+>>
+
+[Log] "SyncAccountInfoToOthers joule 800073 level 38 collectorValue 40 collectorLevel 1 rewardflag 0 abtestflag 0 <389.1753>" 
+<<
+>>
+
+[Log] "SyncAccountInfoToOthers joule 800073 level 38 collectorValue 40 collectorLevel 1 rewardflag 0 abtestflag 0 <389.2266>" 
+<<
+>>
+
+[Log] "[Info ]=============OnPlayerDisconnected(NetworkPlayer player)============= <390.4232>" 
+<<
+>>
+
+[Log] "[Info ]--- MatchEnd, Exit, Red: 0, Blue: 0 <390.4232>" 
+<<
+>>
+
+[Warning] "[Warn ]--- PlayAgain_Server() --- <390.4232>" 
+<<
+>>
+
+[Log] "[Info ]Host send new room info <390.4232>" 
+<<
+>>
+
+[Log] "No objects for the given player ID were deleted 1 <390.4232>" 
+<<
+>>
+

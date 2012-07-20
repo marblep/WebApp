@@ -1,0 +1,160 @@
+[Log] "Start log Port25002_Room6_7-19-15_11_27.txt <0.2381284>" 
+<<
+>>
+
+[Log] "[Info ]Dedicated Host Create Room OK <0.3622181>" 
+<<
+>>
+
+[Log] "LOAD _Capture_Jungle <0.3622181>" 
+<<
+>>
+
+[Log] "[Info ]-------- Capture Mode ---------- <0.6712445>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: InActiveState_CP  Power: 0 <0.6712445>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: InActiveState_CP  Power: 0 <0.6712445>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: InActiveState_CP  Power: 0 <0.6712445>" 
+<<
+>>
+
+[Warning] "[Warn ]MatchTimeManager.Reset() <0.6712445>" 
+<<
+>>
+
+[Log] "[Info ]On_P2P_NewPlayerRequestLogin, ID: 82, Model ID: 4001, Durability: 100, Level: 38 <3.511919>" 
+<<
+>>
+
+[Log] "SyncAccountInfoToOthers joule 800000 level 38 collectorValue 40 collectorLevel 1 rewardflag 0 abtestflag 0 <5.595366>" 
+<<
+>>
+
+[Log] "[Info ]OnClientLevelLoaded_CSMain -- server <5.665306>" 
+<<
+>>
+
+[Log] "[Info ]--- Waiting, Join, Red: 1, Blue: 0 <5.665306>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <5.665306>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <5.665306>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <5.665306>" 
+<<
+>>
+
+[Log] "[Info ][GameState]  WaitingState --> PlayingState <5.665306>" 
+<<
+>>
+
+[Log] "[Info ][On_SelectWeaponOK] accountID: 82, 0, 1, 5001, 5004 <7.074224>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <8.36>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <12.13446>" 
+<<
+>>
+
+[Log] "[Info ]LimitedNATPunchthroughPortRestricted <13.48795>" 
+<<
+>>
+
+[Log] "[Info ]PortRestricted <13.48795>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <39.92>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <41.96605>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <53.6>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <56.24652>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <67.12>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <69.66552>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <77.6>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <80.06938>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: ToRedState_CP  Power: 0.2 <86.75999>" 
+<<
+>>
+
+[Log] "[Info ][Capture] Enter State: NeutralState_CP  Power: 0 <89.39642>" 
+<<
+>>
+
+[Log] "[Info ]=============OnPlayerDisconnected(NetworkPlayer player)============= <144.5469>" 
+<<
+>>
+
+[Error] "[Error]--- Playing, One Player Exit, So At least 1 Player Left, but now Zero Player --- <144.5469>" 
+<<
+>>
+
+[Log] "No objects for the given player ID were deleted 1 <144.5469>" 
+<<
+>>
+
+[Log] "[Debug]OnGameTimeOver() <425.6832>" 
+<<
+>>
+
+[Log] "[Info ]===[WeaponStaticstic]=== 2 <425.6832>" 
+<<
+>>
+
+[Log] "[Info ]--- Playing, Match End, Red: 0, Blue: 0 <425.6832>" 
+<<
+>>
+
+[Log] "[Info ][GameState]  PlayingState --> MatchEndState <425.6832>" 
+<<
+>>
+
+[Warning] "[Warn ]--- PlayAgain_Server() --- <455.6862>" 
+<<
+>>
+
+[Log] "[Info ]Host send new room info <455.6862>" 
+<<
+>>
+
