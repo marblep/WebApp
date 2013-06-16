@@ -1,4 +1,5 @@
 window.addEventListener('load', eventWindowLoaded, false);	
+
 function eventWindowLoaded() {
 	canvasApp();
 }
@@ -56,7 +57,6 @@ function canvasApp(){
 		context.lineTo(pb.x, pb.y);
 		context.stroke();
 		context.closePath();
-
 	}
 	
 	function onMouseClick(e) {
@@ -72,6 +72,7 @@ function canvasApp(){
 		context.clearRect(0, 0, theCanvas.width, theCanvas.height);
 		drawBackgrounp();
 		
+		//Draw all points
 		drawAllPoints(); 
 		
 		if(pointList.length >= 2){
