@@ -75,8 +75,44 @@ function canvasApp(){
 		//Draw all points
 		drawAllPoints(); 
 		
-		if(pointList.length >= 2){
-			drawLine(pointList[pointList.length-2], pointList[pointList.length-1])
+		//Collect Domain Points
+		collectDomainPoints();
+		
+		//Draw Skyline
+		drawSkyline();
+	}
+	
+	var domainList = [];
+	function collectDomainPoints(){
+		
+		if(pointList.length <= 3 ){
+			domainList = pointList.slice(0);
+			return;
+		}
+		
+		domainList = pointList.slice(0);
+		// FindPoint_MostLeft();
+		// while(true){
+			// point_domain = FindPoint_Domain();
+			// if(point_domain === null)
+		// }
+		
+		// if(pointList.length >= 2){
+			// drawLine(pointList[pointList.length-2], pointList[pointList.length-1])
+		// }
+	}
+	
+	function drawSkyline(){
+		if(domainList.length > 1){
+			var start = 0; var end = 0;
+			for(var i=0; i<domainList.length; i++){  
+				start = i;
+				if(i == domainList.length-1)
+					 end = 0;
+				else
+					end = i+1;
+				drawLine(domainList[start], domainList[end]);
+			}
 		}
 	}
 	
