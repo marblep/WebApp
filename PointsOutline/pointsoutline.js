@@ -83,15 +83,24 @@ function canvasApp(){
 	}
 	
 	var domainList = [];
+	var otherList = [];
 	function collectDomainPoints(){
+		
+		domainList = [];
+		otherList = pointList.slice(0);
 		
 		if(pointList.length <= 3 ){
 			domainList = pointList.slice(0);
+			otherList = [];
 			return;
 		}
 		
-		domainList = pointList.slice(0);
-		// FindPoint_MostLeft();
+		//Get the most-left point
+		var mostleft = FindPoint_MostLeft();
+		otherList.splice(otherList.indexOf(mostleft),1);
+		domainList.push(mostleft);
+		console.log("most left: " + mostleft.x + ", " + mostleft.y);
+		//
 		// while(true){
 			// point_domain = FindPoint_Domain();
 			// if(point_domain === null)
@@ -100,6 +109,19 @@ function canvasApp(){
 		// if(pointList.length >= 2){
 			// drawLine(pointList[pointList.length-2], pointList[pointList.length-1])
 		// }
+	}
+	
+	function FindPoint_MostLeft(){
+		var minX = 999999;
+		var point_minX = null;
+		for(var i=0; i<pointList.length; i++){
+			var point = pointList[i];
+			if(point.x < minX){
+				minX = point.x;
+				point_minX = point;
+			}
+		}
+		return point_minX;
 	}
 	
 	function drawSkyline(){
