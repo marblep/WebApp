@@ -100,14 +100,13 @@ function canvasApp(){
 		otherList.splice(otherList.indexOf(mostleft),1);
 		domainList.push(mostleft);
 		console.log("most left: " + mostleft.x + ", " + mostleft.y);
+		
+		
+		//
 		//
 		// while(true){
 			// point_domain = FindPoint_Domain();
 			// if(point_domain === null)
-		// }
-		
-		// if(pointList.length >= 2){
-			// drawLine(pointList[pointList.length-2], pointList[pointList.length-1])
 		// }
 	}
 	
