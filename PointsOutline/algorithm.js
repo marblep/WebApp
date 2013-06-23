@@ -3,7 +3,7 @@ var Algorithm = {
     
     calcSkyline: function(_pointList){
         return _pointList;
-        //Todo  
+        //Todo
     },
     
     FindPoint_MostLeft: function(list){
