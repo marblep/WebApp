@@ -8,7 +8,7 @@ var Algorithm = {
         
         
         return _pointList;
-        //Todo 111
+        //Todo 222
     },
     
     getEdgePoints: function(list, side){
