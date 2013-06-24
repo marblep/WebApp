@@ -2,13 +2,18 @@
 var Algorithm = {
     
     calcSkyline: function(_pointList){
+        
+        var SIDE = { left:{}, bottom:{}, right:{}, top:{} };
+        //var mostleft = 
+        
+        
         return _pointList;
         //Todo 111
     },
     
-    FindPoint_MostLeft: function(list){
+    getEdgePoints: function(list, side){
         var minX = 999999;
-        var point_minX = null;
+        var point_minX = [];
         for(var i=0; i<list.length; i++){
             var point = list[i];
             if(point.x < minX){
@@ -19,3 +24,6 @@ var Algorithm = {
         return point_minX;
     },
 }
+
+//get most edge points
+//canvas coordinate to logic coordinate, y = -y
