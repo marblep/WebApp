@@ -8,10 +8,15 @@ var Algorithm = {
         
         debugDrawEdgePoints(edgeList);
         
+        
         return [];
         
         
-        //Todo 222
+        function leftToBottom(leftlist, bottomlist){
+                    
+            
+        }
+        
         function getEdgePoints(_edgeList, _pointList){
         
             var minx = 99999, maxx = -1, miny = 1, maxy = -99999;
@@ -50,10 +55,19 @@ var Algorithm = {
                     _edgeList.top.push(p);
                     maxy = p.y;
                 }
-                else if(p.x == maxy){
+                else if(p.y == maxy){
                     _edgeList.top.push(p);
                 }
             }
+            
+            _edgeList.left.sort(function(pa,pb){return pb.y - pa.y});
+            _edgeList.bottom.sort(function(pa,pb){return pa.x - pb.x});
+            _edgeList.right.sort(function(pa,pb){return pa.y - pb.y});
+            _edgeList.top.sort(function(pa,pb){return pb.x - pa.x});
+            logEdge("left", edgeList.left);
+            logEdge("bottom", edgeList.bottom);
+            logEdge("right", edgeList.right);
+            logEdge("top", edgeList.top);
         }
         
         function logEdge(title, list){
@@ -62,6 +76,11 @@ var Algorithm = {
                 str += list[i].toString() + ", ";
             console.log( str );
         }
+        
+        //logEdge("left", edgeList.left);
+        //logEdge("right", edgeList.right);
+        //logEdge("bottom", edgeList.bottom);
+        //logEdge("top", edgeList.top);
         
         function debugDrawEdgePoints(_edgeList){
             Draw.drawPoints_Color(_edgeList.left, "pink");
@@ -74,5 +93,3 @@ var Algorithm = {
 
 }
 
-//get most edge points
-//canvas coordinate to logic coordinate, y = -y

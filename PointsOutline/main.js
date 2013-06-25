@@ -16,6 +16,9 @@ var Main = {
         
         function onMouseClick(e) {
     
+            testData();
+            return;
+            
             addNewPoint(e.clientX-50, -(e.clientY-50), pointList);
             
             Draw.clearCanvas(context, theCanvas);
@@ -52,6 +55,21 @@ var Main = {
             this.toString = function(){
                 return "(x = " + this.x + ", y = " + this.y + ")";
             }
+        }
+        
+        function testData(){
+            var testlist = [];
+            addNewPoint(100, -100, testlist);
+            addNewPoint(100, -200, testlist);
+            addNewPoint(200, -100, testlist);
+            addNewPoint(200, -200, testlist);
+            addNewPoint(300, -100, testlist);
+            addNewPoint(300, -200, testlist);
+            
+            Draw.clearCanvas(context, theCanvas);
+            Draw.drawAllPoints(testlist, context); 
+            var list_skyline = Algorithm.calcSkyline(testlist);
+            //Draw.drawSkyline(list_skyline, context);
         }
     },
 }
