@@ -2,13 +2,33 @@
 
 var Draw = {
     
+    defaultContext: {value : null},
+    
     drawPoint: function(x,y,context){
             context.beginPath();
             context.strokeStyle = "black"; 
             context.lineWidth=5;
-            context.arc(x, y, 5, (Math.PI/180)*0, (Math.PI/180)*360, false); // full circle
+            context.arc(x, -y, 5, (Math.PI/180)*0, (Math.PI/180)*360, false); // full circle
             context.stroke();
             context.closePath();
+            
+            Draw.defaultContext.value = context;
+    },
+    
+    drawPoint_Color: function(x, y, color){
+            Draw.defaultContext.value.beginPath();
+            Draw.defaultContext.value.strokeStyle = color; 
+            Draw.defaultContext.value.lineWidth=7;
+            Draw.defaultContext.value.arc(x, -y, 5, (Math.PI/180)*0, (Math.PI/180)*360, false); // full circle
+            Draw.defaultContext.value.stroke();
+            Draw.defaultContext.value.closePath();      
+    },
+    
+    drawPoints_Color: function(list, color){
+        for(var i=0; i<list.length; i++){
+            var p = list[i];
+            Draw.drawPoint_Color(p.x, p.y, color);
+        }
     },
     
     drawAllPoints: function(_pointList, context){
@@ -22,8 +42,8 @@ var Draw = {
         context.lineWidth=5;
         context.lineCap='square';
         context.beginPath();
-        context.moveTo(pa.x, pa.y);
-        context.lineTo(pb.x, pb.y);
+        context.moveTo(pa.x, -pa.y);
+        context.lineTo(pb.x, -pb.y);
         context.stroke();
         context.closePath();
     },

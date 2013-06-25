@@ -16,7 +16,7 @@ var Main = {
         
         function onMouseClick(e) {
     
-            addNewPoint(e.clientX-50, e.clientY-50, pointList);
+            addNewPoint(e.clientX-50, -(e.clientY-50), pointList);
             
             Draw.clearCanvas(context, theCanvas);
             
@@ -48,6 +48,10 @@ var Main = {
         function Point(x,y){
             this.x = x;
             this.y = y;
+            
+            this.toString = function(){
+                return "(x = " + this.x + ", y = " + this.y + ")";
+            }
         }
     },
 }
