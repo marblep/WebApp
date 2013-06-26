@@ -8,13 +8,24 @@ var Algorithm = {
         
         debugDrawEdgePoints(edgeList);
         
+        //leftToBottom(edgeList.left, edgeList.bottom);
         
         return [];
         
         
         function leftToBottom(leftlist, bottomlist){
-                    
             
+            var skylinePoints = [];        
+            var pStart = leftlist[leftlist.length-1];
+            var pEnd = bottomlist[0];
+            if(pStart = pEnd){
+                skylinePoints.push(pStart);
+                return skylinePoints;
+            }
+            
+            while(true){
+                var line = new Line(pStart, pEnd);
+            }
         }
         
         function getEdgePoints(_edgeList, _pointList){
@@ -87,6 +98,16 @@ var Algorithm = {
             Draw.drawPoints_Color(_edgeList.right, "red");
             Draw.drawPoints_Color(_edgeList.bottom, "blue");
             Draw.drawPoints_Color(_edgeList.top, "green");
+        }
+        
+        function Line(pa,pb){
+            // y + kx + b = 0
+            this.k = (pb.y-pa.y)/(pa.x-pb.x);
+            this.b = -(pa.y+this.k*pa.x);
+            
+            this.getRelativePos = function(p){
+                return (p.y+this.k*p.x+this.b);
+            }
         }
     },
     

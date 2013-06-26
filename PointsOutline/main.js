@@ -16,8 +16,8 @@ var Main = {
         
         function onMouseClick(e) {
     
-            testData();
-            return;
+            //testData();
+            //return;
             
             addNewPoint(e.clientX-50, -(e.clientY-50), pointList);
             
