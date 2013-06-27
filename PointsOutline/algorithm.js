@@ -8,24 +8,56 @@ var Algorithm = {
         
         debugDrawEdgePoints(edgeList);
         
-        //leftToBottom(edgeList.left, edgeList.bottom);
+        var skylineSequence = [];
+        skylineSequence = skylineSequence.concat(leftToBottom(edgeList.left, edgeList.bottom));
+        console.log(skylineSequence.length + ", " + skylineSequence);
         
-        return [];
+        return skylineSequence;
         
         
         function leftToBottom(leftlist, bottomlist){
             
             var skylinePoints = [];        
+            skylinePoints.push(pStart);
+            
+            var candidates = _pointList.slice();
             var pStart = leftlist[leftlist.length-1];
             var pEnd = bottomlist[0];
-            if(pStart = pEnd){
-                skylinePoints.push(pStart);
+            if(pStart == pEnd){
                 return skylinePoints;
             }
             
             while(true){
                 var line = new Line(pStart, pEnd);
+                candidates.splice(candidates.indexOf(pStart), 1);
+                candidates.splice(candidates.indexOf(pEnd), 1);
+                var smallCandidates = [];
+                for(var i=0; i<candidates.length; i++){
+                    var p = candidates[i];
+                    if( line.getRelativePos(p) < 0 ){
+                        smallCandidates.push(p);
+                    }
+                }
+                candidates = smallCandidates;
+                if(candidates.length == 0){
+                    skylinePoints.push(pEnd);
+                    break;
+                }
+                
+                var point = candidates[0];
+                var minangle = Math.abs(point.x/point.y);
+                for(var i=1; i<candidates.length; i++){
+                    var p = candidates[i];
+                    var angle = Math.abs(p.x/p.y);
+                    if(angle < minangle){
+                        minangle = angle;
+                        point = p;
+                    }
+                }
+                skylinePoints.push(point);
+                pStart = point;
             }
+            return skylinePoints;
         }
         
         function getEdgePoints(_edgeList, _pointList){
