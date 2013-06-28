@@ -3,3 +3,21 @@ canvas
 {
 	background-color:#0099FF
 }
+
+.button_manual{
+	position:absolute;
+    top: 200px; 
+    left:600px;
+    width: 100px;
+    height: 30px;
+    background-color: #FF9933;
+}
+
+.button_random{
+	position:absolute;
+    top: 250px; 
+    left:600px;
+    width: 100px;
+    height: 30px;
+    background-color: #99CC00;
+}

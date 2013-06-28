@@ -4,8 +4,26 @@ function eventWindowLoaded() {
 	Main.canvasApp();
 }
 
+var ModeType = {random:"Random", manual:"Manual"};
+var mode = ModeType.manual;
+
+//Clear input points
+//Disable button
+
+function OnRandomBtnClick(){
+    mode = ModeType.random;
+    document.getElementById("ID_Random").disabled = true;
+    document.getElementById("ID_Manual").disabled = false;
+}
+
+function OnManualBtnClick(){
+    mode = ModeType.manual;
+    document.getElementById("ID_Random").disabled = false;
+    document.getElementById("ID_Manual").disabled = true;
+}
+
 var Main = {
-    
+        
     canvasApp: function(){
         
         var context;
@@ -16,8 +34,10 @@ var Main = {
         
         function onMouseClick(e) {
     
-            //testData();
-            //return;
+            if(mode == ModeType.random){
+                testData();
+                return;
+            }
             
             addNewPoint(e.clientX-50, -(e.clientY-50), pointList);
             
