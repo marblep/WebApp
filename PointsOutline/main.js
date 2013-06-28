@@ -38,7 +38,7 @@ var Main = {
         
         function addNewPoint(x,y,tolist){
             tolist.push(new Point(x, y));
-            console.log("points number: " + tolist.length);
+            //console.log("points number: " + tolist.length);
         }
         
         function init(){
@@ -58,18 +58,33 @@ var Main = {
         }
         
         function testData(){
-            var testlist = [];
-            addNewPoint(100, -100, testlist);
-            addNewPoint(100, -200, testlist);
-            addNewPoint(200, -100, testlist);
-            addNewPoint(200, -200, testlist);
-            addNewPoint(300, -100, testlist);
-            addNewPoint(300, -200, testlist);
+            var testlist = getRandomPoints(100);
             
             Draw.clearCanvas(context, theCanvas);
             Draw.drawAllPoints(testlist, context); 
             var list_skyline = Algorithm.calcSkyline(testlist);
-            //Draw.drawSkyline(list_skyline, context);
+            Draw.drawSkyline(list_skyline, context);
+        }
+        
+        function getRandomPoints(num){
+            var points = [];
+            for(var i=0; i<num; i++){
+                var x = Math.floor(Math.random() * theCanvas.width);
+                var y = Math.floor(Math.random() * theCanvas.height);
+                addNewPoint(x, -y, points);
+            }
+            return points;
+        }
+        
+        function getRectPoints(){
+            var points = [];
+            addNewPoint(100, -100, points);
+            addNewPoint(100, -200, points);
+            addNewPoint(200, -100, points);
+            addNewPoint(200, -200, points);
+            addNewPoint(300, -100, points);
+            addNewPoint(300, -200, points);
+            return points;
         }
     },
 }
