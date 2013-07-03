@@ -1,0 +1,10 @@
+canvas
+{
+	background-color:#CCCCCC;
+	position:absolute;
+	top: 100px; 
+    left:100px;
+    width: 800px;
+    height: 180px;
+}
+
