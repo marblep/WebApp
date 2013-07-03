@@ -1,1 +1,6 @@
-var TheNatureOfCode = {};
+TheNatureOfCode.Vectors = {
+    
+    
+};
+
+
