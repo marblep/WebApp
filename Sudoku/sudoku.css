@@ -1,0 +1,57 @@
+body,table,tr,td,div
+{
+    margin: 0px;
+    padding: 1px;
+    border: 0px;
+    border-collapse: collapse;
+    font-family: Arial;
+}
+
+.row-fluid > [class*="span"]:first-child {
+  	float: center;
+	margin-left: 25%;
+	margin-top: 15%;
+}
+
+
+.value 
+{
+    text-align: center;
+    font-size: 30px;
+    color:#2F96B4;
+    background-color:#F2DEDE;
+}
+
+input
+{
+    border: 0px solid;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    outline: none;
+    font-size: 30px;
+}
+
+input:hover
+{
+    background-color:#D6E9C6;
+}
+
+
+.input:hover
+{
+    background-color: #AAAAAA;
+}
+
+
+.cell 
+{
+    width: 45px;
+    height: 45px;
+    border: 2px solid;
+}
+
