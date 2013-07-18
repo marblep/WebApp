@@ -1,210 +1,307 @@
-
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Sudoku</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sudoku</title>
+    </head>
 
-<body>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="sudoku.css" />
-    
-	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="bootstrap.js"></script>
-	<script type="text/javascript" src="ui.js"></script>    
-	<script type="text/javascript" src="main.js"></script>
-	
-	<div class="container">
-    
-    <div class="row-fluid">
-        <div class="span6">
-        <table>
-            <tbody><tr>
-                <td>
+    <body>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="sudoku.css" />
+
+        <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap.js"></script>
+        <script type="text/javascript" src="ui.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+
+        <div class="container">
+
+            <div class="row-fluid">
+                <div class="span6">
                     <table>
-                        <tbody><tr>
-                            <td id="0" class="value cell" data-original-title="">7</td>
-                            <td id="1" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="2" class="value cell" data-original-title="">1</td>
-                        </tr>
-                        <tr>
-                            <td id="9" class="value cell" data-original-title="">8</td>
-                            <td id="10" class="value cell" data-original-title="">3</td>
-                            <td id="11" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="18" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="19" class="value cell" data-original-title="">9</td>
-                            <td id="20" class="value cell" data-original-title="">2</td>
-                        </tr>
-                    </tbody></table>
-                </td>
-                <td>
-                    <table>
-                        <tbody><tr>
-                            <td id="3" class="value cell" data-original-title="">5</td>
-                            <td id="4" class="value cell" data-original-title="">9</td>
-                            <td id="5" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="12" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="13" class="value cell" data-original-title="">6</td>
-                            <td id="14" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="21" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="22" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="23" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                    </tbody></table>
-                </td>
-                <td>
-                   <table>
-                        <tbody><tr>
-                            <td id="6" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="7" class="value cell" data-original-title="">4</td>
-                            <td id="8" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="15" class="value cell" data-original-title="">1</td>
-                            <td id="16" class="value cell" data-original-title="">9</td>
-                            <td id="17" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="24" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="25" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="26" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                   </tbody></table> 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table>
-                        <tbody><tr>
-                            <td id="27" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="28" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="29" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="36" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="37" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="38" class="value cell" data-original-title="">8</td>
-                        </tr>
-                        <tr>
-                            <td id="45" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="46" class="value cell" data-original-title="">5</td>
-                            <td id="47" class="value cell" data-original-title="">6</td>
-                        </tr>
-                    </tbody></table>
-                </td>
-                <td>
-                    <table>
-                        <tbody><tr>
-                            <td id="30" class="value cell" data-original-title="">9</td>
-                            <td id="31" class="value cell" data-original-title="">1</td>
-                            <td id="32" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="39" class="value cell" data-original-title="">6</td>
-                            <td id="40" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="41" class="value cell" data-original-title="">4</td>
-                        </tr>
-                        <tr>
-                            <td id="48" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="49" class="value cell" data-original-title="">7</td>
-                            <td id="50" class="value cell" data-original-title="">8</td>
-                        </tr>
-                    </tbody></table>
-                </td>
-                <td>
-                   <table>
-                        <tbody><tr>
-                            <td id="33" class="value cell" data-original-title="">8</td>
-                            <td id="34" class="value cell" data-original-title="">6</td>
-                            <td id="35" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="42" class="value cell" data-original-title="">5</td>
-                            <td id="43" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="44" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="51" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="52" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="53" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                   </tbody></table> 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table>
-                        <tbody><tr>
-                            <td id="54" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="55" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="56" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="63" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="64" class="value cell" data-original-title="">7</td>
-                            <td id="65" class="value cell" data-original-title="">4</td>
-                        </tr>
-                        <tr>
-                            <td id="72" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="73" class="value cell" data-original-title="">2</td>
-                            <td id="74" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                    </tbody></table>
-                </td>
-                <td>
-                    <table>
-                        <tbody><tr>
-                            <td id="57" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="58" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="59" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="66" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="67" class="value cell" data-original-title="">3</td>
-                            <td id="68" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="75" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="76" class="value cell" data-original-title="">4</td>
-                            <td id="77" class="value cell" data-original-title="">9</td>
-                        </tr>
-                    </tbody></table>
-                </td>
-                <td>
-                   <table>
-                        <tbody><tr>
-                            <td id="60" class="value cell" data-original-title="">7</td>
-                            <td id="61" class="value cell" data-original-title="">3</td>
-                            <td id="62" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                        </tr>
-                        <tr>
-                            <td id="69" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="70" class="value cell" data-original-title="">1</td>
-                            <td id="71" class="value cell" data-original-title="">2</td>
-                        </tr>
-                        <tr>
-                            <td id="78" class="value cell" data-original-title="">6</td>
-                            <td id="79" class="input value cell" data-original-title=""><input maxlength="1" size="1"></td>
-                            <td id="80" class="value cell" data-original-title="">5</td>
-                        </tr>
-                   </tbody></table> 
-                </td>
-            </tr>
-        </tbody></table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="0" class="value cell" >7</td>
+                                            <td id="1" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="2" class="value cell"  >1</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="9" class="value cell"  >8</td>
+                                            <td id="10" class="value cell"  >3</td>
+                                            <td id="11" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="18" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="19" class="value cell"  >9</td>
+                                            <td id="20" class="value cell"  >2</td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                                <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="3" class="value cell"  >5</td>
+                                            <td id="4" class="value cell"  >9</td>
+                                            <td id="5" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="12" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="13" class="value cell"  >6</td>
+                                            <td id="14" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="21" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="22" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="23" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                                <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="6" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="7" class="value cell"  >4</td>
+                                            <td id="8" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="15" class="value cell"  >1</td>
+                                            <td id="16" class="value cell"  >9</td>
+                                            <td id="17" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="24" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="25" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="26" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="27" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="28" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="29" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="36" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="37" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="38" class="value cell"  >8</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="45" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="46" class="value cell"  >5</td>
+                                            <td id="47" class="value cell"  >6</td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                                <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="30" class="value cell"  >9</td>
+                                            <td id="31" class="value cell"  >1</td>
+                                            <td id="32" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="39" class="value cell"  >6</td>
+                                            <td id="40" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="41" class="value cell"  >4</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="48" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="49" class="value cell"  >7</td>
+                                            <td id="50" class="value cell"  >8</td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                                <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="33" class="value cell"  >8</td>
+                                            <td id="34" class="value cell"  >6</td>
+                                            <td id="35" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="42" class="value cell"  >5</td>
+                                            <td id="43" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="44" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="51" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="52" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="53" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="54" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="55" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="56" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="63" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="64" class="value cell"  >7</td>
+                                            <td id="65" class="value cell"  >4</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="72" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="73" class="value cell"  >2</td>
+                                            <td id="74" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                                <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="57" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="58" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="59" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="66" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="67" class="value cell"  >3</td>
+                                            <td id="68" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="75" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="76" class="value cell"  >4</td>
+                                            <td id="77" class="value cell"  >9</td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                                <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td id="60" class="value cell"  >7</td>
+                                            <td id="61" class="value cell"  >3</td>
+                                            <td id="62" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="69" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="70" class="value cell"  >1</td>
+                                            <td id="71" class="value cell"  >2</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="78" class="value cell"  >6</td>
+                                            <td id="79" class="input value cell"  >
+                                            <input maxlength="1" size="1">
+                                            </td>
+                                            <td id="80" class="value cell"  >5</td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
         </div>
-    
-    
+    </body>
 
-</div></div>
-</body>
-
-              
-             
 </html>
