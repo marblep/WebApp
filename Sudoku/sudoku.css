@@ -13,13 +13,17 @@ body,table,tr,td,div
 	margin-top: 15%;
 }
 
+.borad{
+	position: absolute;
+	margin: auto 25% auto 25% ;
+}
 
 .value 
 {
     text-align: center;
     font-size: 30px;
     color:#2F96B4;
-    background-color:#F2DEDE;
+    background-color:#FBB450;
 }
 
 input
